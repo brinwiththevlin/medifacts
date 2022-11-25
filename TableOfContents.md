@@ -10,7 +10,7 @@ We are seeking to create a platform to be the intersection between doctors and p
 
 #### [Concstraints Essay](https://github.com/brinwiththevlin/medifacts/blob/main/Constraints-Essay.md)
 
-#### Slide Deck
+#### [Slide Deck](https://mailuc-my.sharepoint.com/:p:/g/personal/owensgr_mail_uc_edu/Edc6ry_B3CpJuojYelvZ2ckBgLRs2eoTLxW3uk5BY7EZTA?e=Prc32V)
 
 #### [Self Assessments](https://github.com/brinwiththevlin/medifacts/tree/main/Self-Assessments)
 
