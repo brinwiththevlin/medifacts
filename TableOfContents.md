@@ -12,7 +12,7 @@ We are seeking to create a platform to be the intersection between doctors and p
 
 #### Slide Deck
 
-#### [Self Assessments](https://github.com/brinwiththevlin/medifacts/tree/main/self-assessments)
+#### [Self Assessments](https://github.com/brinwiththevlin/medifacts/tree/main/Self-Assessments)
 
 #### [Professional Biographies](https://github.com/brinwiththevlin/medifacts/tree/main/professional-bios)
 
