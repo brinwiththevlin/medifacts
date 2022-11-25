@@ -14,7 +14,7 @@ We are seeking to create a platform to be the intersection between doctors and p
 
 #### [Self Assessments](main/self-assessments)
 
-#### [Professional Biographies](main/professional-bios)
+#### [Professional Biographies](https://github.com/brinwiththevlin/medifacts/tree/main/professional-bios)
 
 #### [Budget](main/budget)
 
