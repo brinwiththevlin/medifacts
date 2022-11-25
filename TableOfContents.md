@@ -6,16 +6,16 @@ We are seeking to create a platform to be the intersection between doctors and p
 
 #### [User Stories and Design Diagrams](main/professional-bios)
 
-#### [Task List and Timelines](main/tasks-timelines)
+#### [Task List and Timelines](https://github.com/brinwiththevlin/medifacts/tree/main/tasks-timelines)
 
-#### [Concerns Essay](Concerns-Essay)
+#### [Concstraints Essay](https://github.com/brinwiththevlin/medifacts/blob/main/Constraints-Essay.md)
 
 #### Slide Deck
 
-#### [Self Assessments](main/self-assessments)
+#### [Self Assessments](https://github.com/brinwiththevlin/medifacts/tree/main/self-assessments)
 
 #### [Professional Biographies](https://github.com/brinwiththevlin/medifacts/tree/main/professional-bios)
 
-#### [Budget](main/budget)
+#### [Budget](https://github.com/brinwiththevlin/medifacts/blob/main/budget.md)
 
-#### [Appendix](main/appendix)
+#### [Appendix](https://github.com/brinwiththevlin/medifacts/blob/main/appendix.md)
