@@ -1,23 +1,48 @@
-## Create 10-25 project-specific tasks and split them among members.
-1.	Investigate necessary languages and frameworks to develop the web app.
-2.	Design home page layout/UI
-3.	Develop home page
-4.	Design messaging interface layout/UI
-5.	Develop messaging interface
-6.	Design doctor view interface/UI
-7.	Develop doctor view
-8.	Design patient view interface/UI
-9.	Develop patient view
-10.	Design user profile view (to be viewed by self and others)
-11.	Develop user profile view
-12.	Specify user validation method
-13.	Develop login page
-14.	Develop user database
-15.	Design question posting method
-16.	Develop question posting & filtering method
-17.	Develop reading recommendation mechanism
-18.	Create method for allowing “blocked” words
-19.	Develop mechanism for replying/commenting on a post
-20.	Develop mechanism to edit user profile
-21.	Investigate doctor verification methods
-22.	Create method for hiding questions from search bar (some questions might be to personal to share)
+# Medifacts Task List
+
+## Sabrina 
+- Design home page layout/UI 
+- Design messaging interface layout/UI 
+- Design doctor view interface/UI 
+- Design patient view interface/UI 
+- Design user profile view (to be viewed by self and others) 
+
+## Grace 
+- Develop bridge between UI and user database (work on during winter break- 20% effort) 
+- Develop user validation method (first two-three weeks of spring semester- 25% effort) 
+- Develop mechanism to edit user profile (first two weeks of spring semester- 30% effort) 
+- Create method for implementing “blacklisted” words (complete by week ten of SS- 20% effort) 
+- Develop question posting & filtering method (complete by week five of SS- 30% effort) 
+- Develop reading recommendation mechanism (complete by week twelve of SS- 40% effort) 
+- Design question posting method (complete by week four of SS- 50% effort) 
+- Develop mechanism for replying/commenting on a post (complete by week seven of SS- 40% effort) 
+
+## Laura 
+- Investigate necessary languages and frameworks to develop the web app
+- Specify user validation method 
+- Design question posting method 
+- Develop question posting & filtering method 
+- Develop reading recommendation mechanism 
+- Create method for hiding questions from search bar (some questions might be to personal to share) 
+- Develop mechanism for replying/commenting on a post 
+- Develop mechanism to edit user profile 
+- Develop search functionality  
+- Add feature to hide searchability from others (Doctors only)  
+
+## Bryan  
+- Develop user database 
+- Investigate platforms/engines/database for app
+- Develop platform (flask app, etc)
+- Investigate doctor verification methods 
+- Investigate how to store forum data (not necessarily user database) 
+
+## Nico 
+- Develop home page 
+- Develop doctor view 
+- Develop patient view 
+- Develop user profile view 
+- Develop login page 
+- Develop mechanism to edit user profile 
+- Specify user validation method
+
+
