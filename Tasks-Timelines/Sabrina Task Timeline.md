@@ -1,4 +1,4 @@
-Sabrina Task Timeline
+# Sabrina Task Timeline
 
 1) Design home page layout/UI -- estimated 2 weeks (complete by end of January)
 

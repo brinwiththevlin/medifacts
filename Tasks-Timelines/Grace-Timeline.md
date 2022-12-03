@@ -1,3 +1,5 @@
+# Grace Task Timeline
+
 1. Develop bridge between UI and user database (dependent on database
    being created) - estimated week of work
 2. Develop user validation method - estimated week of work
