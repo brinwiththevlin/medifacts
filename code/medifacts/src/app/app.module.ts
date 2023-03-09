@@ -6,11 +6,22 @@ import { AngularFireModule} from '@angular/fire/compat';
 import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
 import { FirestoreModule } from '@angular/fire/firestore';
 
+import { NgxsModule } from '@ngxs/store';
+import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
+import { NgxsFormPluginModule } from '@ngxs/form-plugin';
+import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
+import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
+import { NgxsResetPluginModule } from 'ngxs-reset-plugin';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { environment } from 'src/environments/environment';
+
+import { AppState } from './store/app.state';
+import { SettingsState } from './store/settings/settings.state';
+import { UserState } from './store/user/user.state';
 
 const firebaseConfig = {
   apiKey: "AIzaSyD4HRv7UFkvIIkRK-g9KIYnxJ1CZIJ7lVs",
@@ -36,6 +47,15 @@ const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAnalyticsModule,
     FirestoreModule,
+
+    // NgxsModule.forRoot([AppState, SettingsState, UserState], {
+    //   developmentMode: !environment.production
+    // }),
+    // NgxsFormPluginModule.forRoot(),
+    // NgxsStoragePluginModule.forRoot({ key: 'settings' }),
+    // NgxsResetPluginModule.forRoot(),
+    // NgxsLoggerPluginModule.forRoot({ disabled: environment.production }),
+    // NgxsReduxDevtoolsPluginModule.forRoot({ disabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]

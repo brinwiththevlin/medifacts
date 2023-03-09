@@ -1,0 +1,86 @@
+<nz-comment
+  *ngFor="let comment of comments"
+  nzDatetime="{{ comment.createdAt | date: 'medium' }}"
+>
+  <nz-comment-content>
+    <p>
+      {{ comment.comment }}
+    </p>
+  </nz-comment-content>
+  <nz-comment-action>
+    <button nz-button nzType="link" (click)="like(comment)">
+      <i
+        nz-tooltip
+        nzTitle="Like"
+        nz-icon
+        nzType="like"
+        [nzTheme]="
+          (doesUserLikesComment$(comment.id) | async) ? 'fill' : 'outline'
+        "
+      ></i>
+      <span class="count like">{{ comment.likesCount }}</span>
+    </button>
+  </nz-comment-action>
+  <nz-comment-action>
+    <button nz-button nzType="link" (click)="dislike(comment)">
+      <i
+        nz-tooltip
+        nzTitle="Dislike"
+        nz-icon
+        nzType="dislike"
+        [nzTheme]="
+          (doesUserDislikesComment$(comment.id) | async) ? 'fill' : 'outline'
+        "
+      ></i>
+      <span class="count dislike">{{ comment.dislikesCount }}</span>
+    </button>
+  </nz-comment-action>
+
+  <nz-comment-action>
+    <button nz-button nzType="link" (click)="showReplyTo(comment)">
+      <i nz-icon nzType="comment"></i>
+      {{ "REPLY" | translate }}
+    </button>
+  </nz-comment-action>
+
+  <app-comment-reply-to
+    class="db ph3-ns"
+    *ngIf="comment.shouldShowReplyTo"
+    (cancel)="hideReplyTo(comment)"
+    (saveComment)="onSaveComment($event, comment.id)"
+    [@inOut]
+  ></app-comment-reply-to>
+
+  <ng-container *ngIf="comment.childComments && comment.childComments.length">
+    <button
+      nz-button
+      nzType="link"
+      class="mb2"
+      (click)="toggleShowChildComments(comment)"
+    >
+      <span>
+        <ng-container *ngIf="comment.shouldShowChildComments">
+          <i nz-icon nzType="up" nzTheme="outline"></i>
+          {{ "COMMENTS.HIDE" | translate }}
+        </ng-container>
+        <ng-container *ngIf="!comment.shouldShowChildComments">
+          <i nz-icon nzType="down" nzTheme="outline"></i>
+          {{ "COMMENTS.VIEW" | translate }}
+        </ng-container>
+        {{
+          (comment.childComments.length === 1
+            ? "COMMENTS.REPLY"
+            : "COMMENTS.REPLIES"
+          ) | translate: { count: comment.childComments.length }
+        }}
+      </span>
+    </button>
+    <app-post-comments
+      [@inOut]
+      *ngIf="comment.shouldShowChildComments"
+      [postId]="postId"
+      [comments]="comment.childComments"
+      (saveComment)="saveComment.emit($event)"
+    ></app-post-comments>
+  </ng-container>
+</nz-comment>
