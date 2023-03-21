@@ -18,7 +18,7 @@ export class AppState {
   ) {}
 
   @Action(HandleApiFailure)
-  handleApiFailure(_, action: HandleApiFailure) {
+  handleApiFailure(_: any, action: HandleApiFailure) {
     this.translateService
       .get(action.customMessage || 'MESSAGES.FAILED')
       .pipe(first())
@@ -28,7 +28,7 @@ export class AppState {
   }
 
   @Action(HandleApiSuccess)
-  handleApiSuccess(_, action: HandleApiSuccess) {
+  handleApiSuccess(_: any, action: HandleApiSuccess) {
     this.translateService
       .get(action.customMessage || 'MESSAGES.SUCCESS')
       .pipe(first())
