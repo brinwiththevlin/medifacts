@@ -48,14 +48,14 @@ const firebaseConfig = {
     AngularFireAnalyticsModule,
     FirestoreModule,
 
-    // NgxsModule.forRoot([AppState, SettingsState, UserState], {
-    //   developmentMode: !environment.production
-    // }),
-    // NgxsFormPluginModule.forRoot(),
-    // NgxsStoragePluginModule.forRoot({ key: 'settings' }),
-    // NgxsResetPluginModule.forRoot(),
-    // NgxsLoggerPluginModule.forRoot({ disabled: environment.production }),
-    // NgxsReduxDevtoolsPluginModule.forRoot({ disabled: environment.production }),
+    NgxsModule.forRoot([AppState, SettingsState, UserState], {
+      developmentMode: !environment.production
+    }),
+    NgxsFormPluginModule.forRoot(),
+    NgxsStoragePluginModule.forRoot({ key: 'settings' }),
+    NgxsResetPluginModule.forRoot(),
+    NgxsLoggerPluginModule.forRoot({ disabled: environment.production }),
+    NgxsReduxDevtoolsPluginModule.forRoot({ disabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
