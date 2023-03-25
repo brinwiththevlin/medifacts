@@ -13,11 +13,13 @@ import { SetLanguage } from './settings.actions';
 })
 @Injectable()
 export class SettingsState {
-  constructor(private translateService: TranslateService) {}
+  constructor(
+    // private translateService: TranslateService
+  ) {}
 
   @Action(SetLanguage)
   setLanguage(ctx: StateContext<SettingsStateModel>, action: SetLanguage) {
-    this.translateService.use(action.language);
+    // this.translateService.use(action.language);
     ctx.patchState({ language: action.language });
   }
 }

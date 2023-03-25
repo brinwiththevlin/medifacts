@@ -48,7 +48,7 @@ const firebaseConfig = {
     AngularFireAnalyticsModule,
     FirestoreModule,
 
-    NgxsModule.forRoot([/*AppState, SettingsState, */UserState], {
+    NgxsModule.forRoot([AppState, SettingsState, UserState], {
       developmentMode: !environment.production
     }),
     NgxsFormPluginModule.forRoot(),

@@ -13,27 +13,27 @@ import { HandleApiFailure, HandleApiSuccess } from './app.actions';
 @Injectable()
 export class AppState {
   constructor(
-    private message: NzMessageService,
-    private translateService: TranslateService
+    // private message: NzMessageService,
+    // private translateService: TranslateService,
   ) {}
 
   @Action(HandleApiFailure)
   handleApiFailure(_: any, action: HandleApiFailure) {
-    this.translateService
-      .get(action.customMessage || 'MESSAGES.FAILED')
-      .pipe(first())
-      .subscribe(message => {
-        this.message.error(message);
-      });
+    // this.translateService
+    //   .get(action.customMessage || 'MESSAGES.FAILED')
+    //   .pipe(first())
+    //   .subscribe(message => {
+    //     this.message.error(message);
+    //   });
   }
 
   @Action(HandleApiSuccess)
   handleApiSuccess(_: any, action: HandleApiSuccess) {
-    this.translateService
-      .get(action.customMessage || 'MESSAGES.SUCCESS')
-      .pipe(first())
-      .subscribe(message => {
-        this.message.success(message);
-      });
+    // this.translateService
+    //   .get(action.customMessage || 'MESSAGES.SUCCESS')
+    //   .pipe(first())
+    //   .subscribe(message => {
+    //     this.message.success(message);
+    //   });
   }
 }
