@@ -9,13 +9,14 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
-
+import { RouterModule } from '@angular/router';
 // import {IonicModule, IonicRouteStrategy} from '@ionic/angular'
 
 import { AppRoutingModule } from './app-routing.module';
 import { PostsPage } from './posts/posts.component';
 
 import { AppComponent } from './app.component';
+import { RegisterLoginPageModule } from './registerlogin/registerlogin.module';
 //Import posts component
 
 
@@ -36,12 +37,16 @@ const firebaseConfig = {
 
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAnalyticsModule,
     FirestoreModule,
     PostsPageModule,
+    RouterModule.forRoot([
+      {path: 'posts', component: PostsPageModule},
+      {path: 'registerlogin', component: RegisterLoginPageModule}
+    ]),
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage())

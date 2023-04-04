@@ -8,16 +8,18 @@ import {
   query,
   where,
 } from '@angular/fire/firestore';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html'
 //  styleUrls: ['./tasks.page.scss'],
 })
+
 export class PostsPage  implements  OnInit{
- posts$ = collectionData(collection(this.firestore, 'posts' )) as Observable<Post[]>;
-  constructor( private readonly firestore: Firestore
+
   
-  ) {}
+ posts$ = collectionData(collection(this.firestore, 'posts' )) as Observable<Post[]>;
+  constructor(public router: Router, private readonly firestore: Firestore ) {}
   ngOnInit(): void {
       
   }

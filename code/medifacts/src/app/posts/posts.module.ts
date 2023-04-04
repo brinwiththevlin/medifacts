@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import {RouterModule} from '@angular/router';
 
 import { PostsPageRoutingModule } from './posts-routing.module';
 
@@ -14,7 +14,7 @@ import { PostsPage } from '../posts/posts.component'
   imports: [
     CommonModule,
     FormsModule,
-    PostsPageRoutingModule
+    PostsPageRoutingModule, RouterModule
    // FileSizePipeModule,
   ]
  // declarations: [PostsPage]
