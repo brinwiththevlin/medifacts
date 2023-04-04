@@ -7,6 +7,7 @@ import { FirestoreModule } from '@angular/fire/firestore';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SharedModule, HeaderComponent, FooterComponent} from './shared';
 
 const firebaseConfig = {
   apiKey: "AIzaSyD4HRv7UFkvIIkRK-g9KIYnxJ1CZIJ7lVs",
@@ -21,7 +22,8 @@ const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-
+    FooterComponent, 
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAnalyticsModule,
     FirestoreModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

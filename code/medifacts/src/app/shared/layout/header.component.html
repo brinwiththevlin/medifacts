@@ -1,0 +1,114 @@
+<!-- add links as needed, possible search bar? -->
+
+<style>
+.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fffff6;
+  position: fixed;
+  width: 100%;
+}
+nav div .navbar-brand{
+  float: left;
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 200%;
+}
+
+li{
+  float: right;
+  list-style-type: none;
+}
+li a{
+  display: block;
+  text-align: center;
+  padding:15px;
+  background-color: #fffff6;
+  text-decoration: none;
+  list-style-type: none;
+  font-family:Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 100%;
+}
+li a:hover{
+  text-decoration: underline;
+}
+</style>
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Medifacts</a>
+
+    <!-- Show this for logged out users -->
+    <!-- <ul *appShowAuthed="false"
+      class="nav navbar-nav pull-xs-right"> -->
+    <ul class="nav navbar-nav pull-xs-right">
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/">
+          Home
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/login"
+          routerLinkActive="active">
+          Sign in
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/register"
+          routerLinkActive="active">
+          Sign up
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Show this for logged in users -->
+    <!-- <ul *appShowAuthed="true"
+      class="nav navbar-nav pull-xs-right">
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">
+          Home
+        </a>
+      </li> -->
+<!-- 
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/editor"
+          routerLinkActive="active">
+          <i class="ion-compose"></i>&nbsp;New Article
+        </a>
+      </li> -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/settings"
+          routerLinkActive="active">
+          <i class="ion-gear-a"></i>&nbsp;Settings
+        </a>
+      </li> -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link"
+          [routerLink]="['/profile', currentUser.username]"
+          routerLinkActive="active">
+          <img [src]="currentUser.image" *ngIf="currentUser.image" class="user-pic" />
+          {{ currentUser.username }}
+        </a>
+      </li> -->
+
+    <!-- </ul> -->
+
+  </div>
+</nav>
