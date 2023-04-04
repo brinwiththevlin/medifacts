@@ -10,8 +10,8 @@ export interface Post {
   likesCount: number;
   dislikesCount: number;
   commentsCount: number;
-  doesUserLike?: boolean;
-  doesUserDislike?: boolean;
+  doesUserLike: boolean;
+  doesUserDislike: boolean;
   user: string;
   post_text: string;
 }
