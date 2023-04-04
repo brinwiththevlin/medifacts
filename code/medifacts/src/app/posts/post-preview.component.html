@@ -1,0 +1,30 @@
+<ng-container class = "posty">
+  <header class="header">
+    <h1>Mr. Camel</h1>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <ul *ngFor = 'let post of posts$ | async'>
+      <li >{{post.post_text}}</li>
+      <li>{{post.user}}</li>
+      <li>Milk</li>
+    </ul>  
+
+    <button (click)="router.navigate(['/registerlogin']);">
+      <span>Go to master Page</span>
+   </button>
+
+  </header>
+</ng-container>
+
+<!-- <div class="container">
+  <header class="header">
+    <h1>Mr. Camel</h1>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </header> -->
