@@ -1,12 +1,23 @@
-import { NgModule } from '@angular/core';
+import { NgModule,  CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule} from '@angular/fire/compat';
 import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
 import { FirestoreModule } from '@angular/fire/firestore';
+import { PostsPageModule } from './posts/posts.module';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getStorage, provideStorage } from '@angular/fire/storage';
 
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+
+// import {IonicModule, IonicRouteStrategy} from '@ionic/angular'
 
 import { AppRoutingModule } from './app-routing.module';
+import { PostsPage } from './posts/posts.component';
+
 import { AppComponent } from './app.component';
+//Import posts component
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyD4HRv7UFkvIIkRK-g9KIYnxJ1CZIJ7lVs",
@@ -21,6 +32,7 @@ const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
+    PostsPage
 
   ],
   imports: [
@@ -29,9 +41,15 @@ const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAnalyticsModule,
     FirestoreModule,
+    PostsPageModule,
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
+    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:      [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 
 export class AppModule { }
