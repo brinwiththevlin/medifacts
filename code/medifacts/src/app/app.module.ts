@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { PostsPage } from './posts/posts.component';
-
+import { RegisterPage } from './registerlogin/register.component';
 import { AppComponent } from './app.component';
 import { RegisterLoginPageModule } from './registerlogin/registerlogin.module';
 //Import posts component
@@ -39,7 +39,8 @@ const firebaseConfig = {
     PostsPage,
    FooterComponent,
    HeaderComponent,
-   ProfilePage
+   ProfilePage,
+   RegisterPage
 
   ],
   imports: [

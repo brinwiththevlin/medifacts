@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { PostsPage } from './posts/posts.component';
 import { RegisterLoginPage } from './registerlogin/registerlogin.component';
 import { ProfilePageModule } from './profile/profile-routing.module';
 import { ProfilePage } from './profile/profile.component';
+import { RegisterPage } from './registerlogin/register.component';
 const routes: Routes = [
   {
     path: '',
@@ -28,7 +29,12 @@ const routes: Routes = [
     component: ProfilePage,
     loadChildren:() =>
       import('./profile/profile.module').then((m)=> m.ProfilePageModule)
+  },
+  {
+    path: 'register',
+    component: RegisterPage
   }
+ 
 ];
 
 @NgModule({
