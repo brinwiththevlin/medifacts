@@ -21,6 +21,8 @@ import { RegisterLoginPageModule } from './registerlogin/registerlogin.module';
 import { HeaderComponent } from './shared';
 import { FooterComponent } from './shared';
 import { SharedModule } from './shared';
+import { ProfilePageModule } from './profile/profile.module';
+import { ProfilePage } from './profile/profile.component';
 const firebaseConfig = {
   apiKey: "AIzaSyD4HRv7UFkvIIkRK-g9KIYnxJ1CZIJ7lVs",
   authDomain: "medifacts-f4306.firebaseapp.com",
@@ -36,7 +38,8 @@ const firebaseConfig = {
     AppComponent,
     PostsPage,
    FooterComponent,
-   HeaderComponent
+   HeaderComponent,
+   ProfilePage
 
   ],
   imports: [
@@ -46,9 +49,11 @@ const firebaseConfig = {
     AngularFireAnalyticsModule,
     FirestoreModule,
     PostsPageModule,
+    ProfilePageModule,
     RouterModule.forRoot([
       {path: 'posts', component: PostsPageModule},
-      {path: 'registerlogin', component: RegisterLoginPageModule}
+      {path: 'registerlogin', component: RegisterLoginPageModule},
+      {path: 'profile', component: ProfilePageModule}
     ]),
     SharedModule,
 
