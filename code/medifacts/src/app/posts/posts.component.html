@@ -1,30 +1,89 @@
-<ng-container class = "posty">
-  <header class="header">
-    <h1>Mr. Camel</h1>
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+<header class="header">
+  <div class="banner">
+    <div class="container">
+      <h1 class="logo-font">Medifacts</h1>
+      <h3>Ask your questions. Get real Answers.</h3>
+      <p>Diagnoses can be scary, so Medifacts is dedicated to helping you get the support you deserve. Limit your posts so that only our licensed medical professionals can answer your quesions. Join a community of individuals with similar diagnoses and get support. Stop doomscrolling and start understanding.</p>
+      <br>
     </div>
-    <ul *ngFor = 'let post of posts$ | async'>
-      <li >{{post.post_text}}</li>
-      <li>{{post.user}}</li>
-      <li>Milk</li>
-    </ul>  
+  </div>
 
-    <button (click)="router.navigate(['/registerlogin']);">
-      <span>Go to master Page</span>
-   </button>
-
-  </header>
-</ng-container>
-
-<!-- <div class="container">
-  <header class="header">
-    <h1>Mr. Camel</h1>
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+  <div class="container page">
+    <div class="post preview">
+      <p>BluePenguin87 - 17 hours ago</p>
+      <h1>Has anyone experienced joint pain while taking medication X?</h1>
+      <p>I have been taking medication X for the past two months to treat my chronic condition. While the medication has been effective in managing my symptoms, I have recently started experiencing joint pain that I didn't have before. I am...</p>
+      <hr>
+      <div class='statsParent'>
+        <div class='statsChild'>0 likes</div>
+        <div class='statsChild'>0 comments</div>
+      </div>
+      <br>
     </div>
-  </header> -->
+
+    <div class="post preview">
+      <p>HopefulHeart - 4/4/2023</p>
+      <h1>Has anyone tried alternative therapies for managing chronic pain?</h1>
+      <p>I have been struggling with chronic pain for several years now, and despite trying various medications and treatments, I still have not found significant relief. I'm tired of relying solely on prescription painkillers, and I'm...</p>
+      <hr>
+      <div class='statsParent'>
+        <div class='statsChild'>0 likes</div>
+        <div class='statsChild'>0 comments</div>
+      </div>
+      <br>
+    </div>
+
+    <div class="post preview">
+      <p>CuriousMindset - 4/3/2023</p>
+      <h1>What are some common causes of chronic fatigue?</h1>
+      <p>I've been experiencing persistent fatigue for several months now, and it's starting to affect my daily life. I'm having trouble concentrating, staying motivated, and even performing simple tasks. I'm curious to know what the possible...</p>
+      <hr>
+      <div class='statsParent'>
+        <div class='statsChild'>0 likes</div>
+        <div class='statsChild'>0 comments</div>
+      </div>
+      <br>
+    </div>
+
+    <div class="post preview">
+      <p>FightingFibro - 4/2/2023</p>
+      <h1>Does anyone have advice for managing fibromyalgia flare-ups?</h1>
+      <p>I was diagnosed with fibromyalgia several years ago, and while I've learned to manage my symptoms to some extent, I still have frequent flare-ups that leave me feeling exhausted and unable to function. I'm hoping to connect with...</p>
+      <hr>
+      <div class='statsParent'>
+        <div class='statsChild'>0 likes</div>
+        <div class='statsChild'>0 comments</div>
+      </div>
+      <br>
+    </div>
+
+    <div class="post preview">
+      <p>MindfulMeditator - 4/1/2023</p>
+      <h1>How can mindfulness and meditation help with anxiety?</h1>
+      <p>I've been struggling with anxiety for several years now, and while therapy and medication have helped to some extent, I'm interested in exploring mindfulness and meditation as a way to manage my symptoms...</p>
+      <hr>
+      <div class='statsParent'>
+        <div class='statsChild'>0 likes</div>
+        <div class='statsChild'>0 comments</div>
+      </div>
+      <br>
+    </div>
+
+    <div class="post preview">
+      <p>USER_HERE - DATE_CREATED</p>
+      <h1>TITLE</h1>
+      <p>PREVIEW _TEXT</p>
+      <hr>
+      <div class='statsParent'>
+        <div class='statsChild'>0 likes</div>
+        <div class='statsChild'>0 comments</div>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <button (click)="router.navigate(['/registerlogin']);">
+    <span>Go to master Page</span>
+ </button>
+
+</header>
