@@ -9,11 +9,18 @@ import {
   where,
 } from '@angular/fire/firestore';
 import { PostsPage } from './posts.component';
+import { PostPage } from './post/post.component';
 const routes: Routes = [
   {
     path: '',
     component: PostsPage,
+  },
+  {
+    path: 'post',
+    component: PostPage
   }
+
+
 ];
 
 @NgModule({

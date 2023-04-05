@@ -18,8 +18,9 @@ import { PostsPage } from './posts/posts.component';
 import { AppComponent } from './app.component';
 import { RegisterLoginPageModule } from './registerlogin/registerlogin.module';
 //Import posts component
-
-
+import { HeaderComponent } from './shared';
+import { FooterComponent } from './shared';
+import { SharedModule } from './shared';
 const firebaseConfig = {
   apiKey: "AIzaSyD4HRv7UFkvIIkRK-g9KIYnxJ1CZIJ7lVs",
   authDomain: "medifacts-f4306.firebaseapp.com",
@@ -33,7 +34,9 @@ const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    PostsPage
+    PostsPage,
+   FooterComponent,
+   HeaderComponent
 
   ],
   imports: [
@@ -47,11 +50,14 @@ const firebaseConfig = {
       {path: 'posts', component: PostsPageModule},
       {path: 'registerlogin', component: RegisterLoginPageModule}
     ]),
+    SharedModule,
+
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage())
     
   ],
+
   providers: [],
   bootstrap: [AppComponent],
   schemas:      [ CUSTOM_ELEMENTS_SCHEMA ]
