@@ -10,7 +10,9 @@
       <li >{{post.post_text}}</li>
       <li>{{post.user}}</li>
       <li>Milk</li>
-    </ul>  
+    </ul> 
+    
+    <app-post-list [config]="listConfig"></app-post-list> <!-- WHY DOESNT THIS WORK -->
 
     <button (click)="router.navigate(['/registerlogin']);">
       <span>Go to master Page</span>

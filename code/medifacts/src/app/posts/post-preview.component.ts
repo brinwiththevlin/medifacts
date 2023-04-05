@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Post } from '../models/post.interface';
 import {
@@ -15,10 +15,10 @@ import {Router} from '@angular/router';
 //  styleUrls: ['./tasks.page.scss'],
 })
 
-export class PostPreview  implements  OnInit{
-
+export class PostPreviewComponent  implements  OnInit{
+  @Input() post: Post;
   
- posts$ = collectionData(collection(this.firestore, 'posts' )) as Observable<Post[]>;
+  posts$ = collectionData(collection(this.firestore, 'posts' )) as Observable<Post[]>;
   constructor(public router: Router, private readonly firestore: Firestore ) {}
   ngOnInit(): void {
       

@@ -8,6 +8,7 @@ import { PostsPageRoutingModule } from './posts-routing.module';
 //import { FileSizePipeModule } from '../shared/pipes/file-size.pipe.module';
 //import { TaskPage } from './task/task.page';
 import { PostsPage } from '../posts/posts.component'
+import { PostListComponent, PostPreviewComponent } from '../posts';
 
 
 @NgModule({
@@ -16,6 +17,14 @@ import { PostsPage } from '../posts/posts.component'
     FormsModule,
     PostsPageRoutingModule, RouterModule
    // FileSizePipeModule,
+  ],
+  declarations: [
+    PostListComponent,
+    PostPreviewComponent
+  ],
+  exports: [
+    PostListComponent,
+    PostPreviewComponent,
   ]
  // declarations: [PostsPage]
 })

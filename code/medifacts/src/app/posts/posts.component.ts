@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Post } from '../models/post.interface';
+import { PostListConfig } from '../models';
 import {
   collection,
   collectionData,
@@ -17,8 +18,12 @@ import {Router} from '@angular/router';
 
 export class PostsPage  implements  OnInit{
 
+  listConfig: PostListConfig = {
+    type: 'all',
+    filters: {}
+  };
   
- posts$ = collectionData(collection(this.firestore, 'posts' )) as Observable<Post[]>;
+  posts$ = collectionData(collection(this.firestore, 'posts' )) as Observable<Post[]>;
   constructor(public router: Router, private readonly firestore: Firestore ) {}
   ngOnInit(): void {
       
