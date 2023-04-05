@@ -11,7 +11,7 @@
   <div class="container page">
     <div class="post preview">
       <p>BluePenguin87 - 17 hours ago</p>
-      <h1>Has anyone experienced joint pain while taking medication X?</h1>
+      <h1> <a [routerLink]="['/post-view']">Has anyone experienced joint pain while taking medication X?</a></h1>
       <p>I have been taking medication X for the past two months to treat my chronic condition. While the medication has been effective in managing my symptoms, I have recently started experiencing joint pain that I didn't have before. I am...</p>
       <hr>
       <div class='statsParent'>
@@ -68,22 +68,10 @@
       </div>
       <br>
     </div>
-
-    <div class="post preview">
-      <p>USER_HERE - DATE_CREATED</p>
-      <h1>TITLE</h1>
-      <p>PREVIEW _TEXT</p>
-      <hr>
-      <div class='statsParent'>
-        <div class='statsChild'>0 likes</div>
-        <div class='statsChild'>0 comments</div>
-      </div>
-      <br>
-    </div>
   </div>
 
   <button (click)="router.navigate(['/registerlogin']);">
-    <span>Go to master Page</span>
+    <span>Login / Register</span>
  </button>
 
 </header>
