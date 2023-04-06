@@ -54,7 +54,7 @@
         transition: margin-left 0.18s ease, opacity 0.15s ease;
     }
     
-    /* .container .signup{
+    .container .signup{
         opacity: 0;
         transition: opacity 0.09s ease;
         
@@ -62,7 +62,7 @@
     .container.active .signup{
         opacity: 1;
         transition: opacity 0.2s ease;
-    } */
+    }
     
     .container.active .forms{
         height: 600px;
@@ -187,7 +187,6 @@
     }
     
     </style>
-    <app-layout-header></app-layout-header>
     <body>
         
         <div class="container">
@@ -217,9 +216,9 @@
                             </div>
                             
                         </div>
-                        <div class="login-signup">
+                        <div class="login-signup " >
                             <span class="text">Not a member?
-                                <a href="#" class="text signup-link">Signup Now</a>
+                                <a href="register" routerLink="/registerlogin/register">Signup Now</a>
                             </span>
                         </div>
                         <div class="form-group button">
@@ -230,7 +229,7 @@
                 </div>
     
                 <!-- Registration Form -->
-                <!-- <div class="form signup">
+                <div class="form signup">
                     <span class="title">Registration</span>
     
                     <form action="#">
@@ -276,10 +275,13 @@
     
                     <div class="login-signup">
                         <span class="text">Already a member?
-                            <a href="#" class="text login-link">Login Now</a>
+                            <a href="/register" class="text login-link" >
+                                
+                                Login Now
+                            </a>
                         </span>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     

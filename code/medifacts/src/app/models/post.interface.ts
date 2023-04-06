@@ -12,4 +12,6 @@ export interface Post {
   commentsCount: number;
   doesUserLike?: boolean;
   doesUserDislike?: boolean;
+  user: string;
+  post_text: string;
 }
