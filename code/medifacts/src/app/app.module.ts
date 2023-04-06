@@ -14,12 +14,15 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { PostsPage } from './posts/posts.component';
-
+import { RegisterPage } from './registerlogin/register.component';
 import { AppComponent } from './app.component';
 import { RegisterLoginPageModule } from './registerlogin/registerlogin.module';
 //Import posts component
-
-
+import { HeaderComponent } from './shared';
+import { FooterComponent } from './shared';
+import { SharedModule } from './shared';
+import { ProfilePageModule } from './profile/profile.module';
+import { ProfilePage } from './profile/profile.component';
 const firebaseConfig = {
   apiKey: "AIzaSyD4HRv7UFkvIIkRK-g9KIYnxJ1CZIJ7lVs",
   authDomain: "medifacts-f4306.firebaseapp.com",
@@ -33,7 +36,11 @@ const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    PostsPage
+    PostsPage,
+   FooterComponent,
+   HeaderComponent,
+   ProfilePage,
+   RegisterPage
 
   ],
   imports: [
@@ -43,15 +50,20 @@ const firebaseConfig = {
     AngularFireAnalyticsModule,
     FirestoreModule,
     PostsPageModule,
+    ProfilePageModule,
     RouterModule.forRoot([
       {path: 'posts', component: PostsPageModule},
-      {path: 'registerlogin', component: RegisterLoginPageModule}
+      {path: 'registerlogin', component: RegisterLoginPageModule},
+      {path: 'profile', component: ProfilePageModule}
     ]),
+    SharedModule,
+
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage())
     
   ],
+
   providers: [],
   bootstrap: [AppComponent],
   schemas:      [ CUSTOM_ELEMENTS_SCHEMA ]

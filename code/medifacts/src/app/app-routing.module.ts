@@ -1,8 +1,11 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { PostView } from './posts/post-view.component';
 import { PostsPage } from './posts/posts.component';
 import { RegisterLoginPage } from './registerlogin/registerlogin.component';
+import { ProfilePageModule } from './profile/profile-routing.module';
+import { ProfilePage } from './profile/profile.component';
+import { RegisterPage } from './registerlogin/register.component';
 const routes: Routes = [
   {
     path: '',
@@ -25,7 +28,18 @@ const routes: Routes = [
     component: RegisterLoginPage,
     loadChildren: () =>
       import('./registerlogin/registerlogin.module').then((m)=> m.RegisterLoginPageModule)
+  },
+  {
+    path: 'profile',
+    component: ProfilePage,
+    loadChildren:() =>
+      import('./profile/profile.module').then((m)=> m.ProfilePageModule)
+  },
+  {
+    path: 'register',
+    component: RegisterPage
   }
+ 
 ];
 
 @NgModule({
