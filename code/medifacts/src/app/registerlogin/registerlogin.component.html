@@ -8,22 +8,27 @@
     }
     
     body{
+        position: static;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #fffff6;
+        
     }
     
-    .container{
-        position: relative;
+    body .container{
+        position: absolute;
         max-width: 430px;
         width: 100%;
+        height:auto;
         background: #fff;
         border-radius: 10px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         margin: 0 20px;
+        top: 75px
+        
     }
     
     .container .forms{
