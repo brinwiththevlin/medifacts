@@ -4,12 +4,14 @@
 
 .navbar{
   list-style-type: none;
+  height: auto;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #fffff6;
   position: sticky;
   width: 100%;
+  border-bottom:3px solid#816E7C;
 }
 nav div .navbar-brand{
   float: left;
@@ -27,7 +29,7 @@ li{
 li a{
   display: block;
   text-align: center;
-  padding:15px;
+  padding: 15px 15px 0;
   background-color: #fffff6;
   text-decoration: none;
   list-style-type: none;
@@ -37,6 +39,14 @@ li a{
 }
 li a:hover{
   text-decoration: underline;
+}
+.profile-pic{
+  display: flex;
+  position: relative;
+  width:50px;
+  height:50px;
+  border-radius: 100%;
+  transform: translateY(-25%);
 }
 </style>
 <nav class="navbar navbar-light">
@@ -50,7 +60,7 @@ li a:hover{
       <li class="nav-item">
         <a class="nav-link"
           routerLink="/profile">
-          <img class="profile-pic" src="../../../assets/images/kunal.jpg"  width="50" height="40" alt="Profile">
+          <img class="profile-pic" src="../../../assets/images/kunal.jpg" alt="Profile">
         </a>
       </li>
       <li class="nav-item">
