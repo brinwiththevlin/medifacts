@@ -1,17 +1,25 @@
-<header class="header">
-  <div class="banner">
+<style>
+  div.bg {
+    background-color:#fffff6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+</style>
+
+<div class="bg">
+  <!-- <div class="banner">
     <div class="container">
       <h1 class="logo-font">Medifacts</h1>
       <h3>Ask your questions. Get real Answers.</h3>
       <p>Diagnoses can be scary, so Medifacts is dedicated to helping you get the support you deserve. Limit your posts so that only our licensed medical professionals can answer your quesions. Join a community of individuals with similar diagnoses and get support. Stop doomscrolling and start understanding.</p>
       <br>
     </div>
-  </div>
+  </div> -->
 
   <div class="container page">
     <div class="post preview">
       <p>BluePenguin87 - 17 hours ago</p>
-      <h1>Has anyone experienced joint pain while taking medication X?</h1>
+      <h1> <a [routerLink]="['/post-view']">Has anyone experienced joint pain while taking medication X?</a></h1>
       <p>I have been taking medication X for the past two months to treat my chronic condition. While the medication has been effective in managing my symptoms, I have recently started experiencing joint pain that I didn't have before. I am...</p>
       <hr>
       <div class='statsParent'>
@@ -68,22 +76,10 @@
       </div>
       <br>
     </div>
-
-    <div class="post preview">
-      <p>USER_HERE - DATE_CREATED</p>
-      <h1>TITLE</h1>
-      <p>PREVIEW _TEXT</p>
-      <hr>
-      <div class='statsParent'>
-        <div class='statsChild'>0 likes</div>
-        <div class='statsChild'>0 comments</div>
-      </div>
-      <br>
-    </div>
   </div>
 
   <button (click)="router.navigate(['/registerlogin']);">
-    <span>Go to master Page</span>
+    <span>Login / Register</span>
  </button>
 
-</header>
+</div>
