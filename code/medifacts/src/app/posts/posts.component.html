@@ -1,7 +1,7 @@
 <style>
 *{
         font-family: Arial, Helvetica, sans-serif;
-        
+        background: #fffff6;
     }
   .container-m{
         position: static;
@@ -40,19 +40,23 @@
         float: right;
     }
     .mission .mission-statement .title{
-        position: static;
+        position: absolute;
         font-size: xx-large;
         font-weight: light;
         float: right;
         height: 50%;
         width: 100%;
         text-align: right; 
-    
+    }
+    .title .words{
+      position: absolute;
+      right: 5px;
+      bottom: 0;
     }
     .mission-statement p{
-      position: static;
+      position: absolute;
       padding: 0 5px;
-      bottom: 0
+      bottom: 0;
     
     }
 
@@ -110,7 +114,9 @@
       <div class="tempbox"> bruh</div>
       <!-- <img class="mission-image" src="./agence-olloweb-d9ILr-dbEdg-unsplash.jpg" alt="misImg" /> -->
       <div class="mission-statement">
-          <div class="title"> Ask Your Questions.<br>Get Real Answers.</div>
+          <div class="title">
+            <div class="words"> Ask Your Questions.<br>Get Real Answers.</div>
+          </div>
           <p> Diagnoses can be scary, so Medifacts is dedicated to helping you get the support you deserve. Limit your posts so that only our licensed medical professionals can answer your questions. Join a community of individuals with similar diagnoses and get support. Stop doomscrolling and start understanding.</p>
       </div>
   </div>

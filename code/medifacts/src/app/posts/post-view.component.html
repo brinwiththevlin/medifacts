@@ -1,17 +1,82 @@
 <style>
-  div.bg {
+
+div.bg {
+    position: static;
     background-color:#fffff6;
     font-family: Arial, Helvetica, sans-serif;
     color:#595959;
+    justify-content: center;
+    display: flex;
   }
+  
+  .container-page{
+    position: absolute;
+    width: 75%;
+    background-color:#fffff6;
+
+
+  }
+  .post-preview{
+    position: relative;
+    border: 1px solid #c7c7c7;
+    padding:35px;
+    text-decoration: none;
+  }
+  .label{
+    display: flex;
+  }
+  .label img{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: #816E7C;
+    color:#E8E6E6;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .label h3{
+    display: inline;
+    padding: 0 10px;
+  }
+  .label p{
+    display: inline;
+    padding: 4px;
+  }
+
+button{
+  background-color: #816E7C;
+  border: none;
+  border-radius: 15%;
+  color: #E8E6E6;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding:10px 15px;
+  margin: 5px;
+}
+button:hover{
+  text-decoration: underline;
+}
+
+.return{
+  position:relative;
+  display: flex;
+  bottom: 60px;
+
+}
 </style>
 
 <div class="bg">
 
-  <div class="container page">
-    <div class="post preview">
-      <p>BluePenguin87 - 17 hours ago</p>
-      <h1>Has anyone experienced joint pain while taking medication X?</h1>
+  <div class="container-page">
+    <div class="post-preview">
+      <div class="label">
+        <img src="" alt="BP">
+        <h3>BluePenguin87</h3>
+        <p> - 17 hours ago</p>
+      </div>
+      <h2>Has anyone experienced joint pain while taking medication X?</h2>
       <i>in General Questions</i>
 
       <div class='body'>
@@ -32,8 +97,8 @@
       <p>0 comments</p>
       <br>
     </div>
+    <div class="return" >  <button (click)="router.navigate(['/posts']);">
+      <span>Go to Feed</span>
+    </button></div>
 
-  <button (click)="router.navigate(['/posts']);">
-    <span>Go to Feed</span>
-  </button>
 </div>
