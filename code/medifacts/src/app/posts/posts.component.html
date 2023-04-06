@@ -1,25 +1,129 @@
 <style>
+*{
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+  .container-m{
+        position: static;
+        height: 50vh;
+        width: 100%;
+        padding: 20px 0;
+        background: #C7C7C7;
+        overflow: hidden;
+        margin: 0;
+        justify-content: center;
+        display: flex;
+    }
+    .container-m .mission{
+        background: #fffff6;
+        position: relative;
+        height: 100%;
+        width: 75%;
+        
+    
+    }
+    .container-m .tempbox{
+        display:inline;
+        float: left;
+        height:100%;
+        position: relative;
+        width: 40%;
+        background-color: #816E7C;
+    }
+    /* .mission .mission-image{
+     
+    } */
+    .mission-statement{
+        position: relative;
+        height: 100%;
+        width: 60%;
+        float: right;
+    }
+    .mission .mission-statement .title{
+        position: static;
+        font-size: xx-large;
+        font-weight: light;
+        float: right;
+        height: 50%;
+        width: 100%;
+        text-align: right; 
+    
+    }
+    .mission-statement p{
+      position: static;
+      padding: 0 5px;
+      bottom: 0
+    
+    }
+
   div.bg {
+    position: static;
     background-color:#fffff6;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#595959;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .container-page{
+    position: absolute;
+    width: 75%;
+
+  }
+  .post-preview{
+    position: relative;
+    border: 1px solid #c7c7c7;
+    padding:35px;
+    text-decoration: none;
+  }
+  .label{
+    display: flex;
+  }
+  .label img{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: #816E7C;
+    color:#E8E6E6;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .label h3{
+    display: inline;
+    padding: 0 10px;
+  }
+  .label p{
+    display: inline;
+    padding: 4px;
+  }
+
+  .statsParent{
+    display: flex;
+  }
+  .statsParent .statsChild{
+    padding: 0 10px
   }
 </style>
-
+<div class="container-m">
+  <div class="mission">
+      <div class="tempbox"> bruh</div>
+      <!-- <img class="mission-image" src="./agence-olloweb-d9ILr-dbEdg-unsplash.jpg" alt="misImg" /> -->
+      <div class="mission-statement">
+          <div class="title"> Ask Your Questions.<br>Get Real Answers.</div>
+          <p> Diagnoses can be scary, so Medifacts is dedicated to helping you get the support you deserve. Limit your posts so that only our licensed medical professionals can answer your questions. Join a community of individuals with similar diagnoses and get support. Stop doomscrolling and start understanding.</p>
+      </div>
+  </div>
+</div>
 <div class="bg">
-  <!-- <div class="banner">
-    <div class="container">
-      <h1 class="logo-font">Medifacts</h1>
-      <h3>Ask your questions. Get real Answers.</h3>
-      <p>Diagnoses can be scary, so Medifacts is dedicated to helping you get the support you deserve. Limit your posts so that only our licensed medical professionals can answer your quesions. Join a community of individuals with similar diagnoses and get support. Stop doomscrolling and start understanding.</p>
-      <br>
-    </div>
-  </div> -->
-
-  <div class="container page">
-    <div class="post preview">
-      <p>BluePenguin87 - 17 hours ago</p>
-      <h1> <a [routerLink]="['/post-view']">Has anyone experienced joint pain while taking medication X?</a></h1>
+  <div class="container-page">
+    <div class="post-preview">
+      <div class="label">
+        <img src="" alt="BP">
+        <h3>BluePenguin87</h3>
+        <p> - 17 hours ago</p>
+      </div>
+      <h2> <a [routerLink]="['/post-view']">Has anyone experienced joint pain while taking medication X?</a></h2>
       <p>I have been taking medication X for the past two months to treat my chronic condition. While the medication has been effective in managing my symptoms, I have recently started experiencing joint pain that I didn't have before. I am...</p>
       <hr>
       <div class='statsParent'>
@@ -29,9 +133,13 @@
       <br>
     </div>
 
-    <div class="post preview">
-      <p>HopefulHeart - 4/4/2023</p>
-      <h1>Has anyone tried alternative therapies for managing chronic pain?</h1>
+    <div class="post-preview">
+      <div class="label">
+        <img src="" alt="HH">
+        <h3>HopefulHeart</h3>
+        <p> - 4/4/2023</p>
+      </div>
+      <h2>Has anyone tried alternative therapies for managing chronic pain?</h2>
       <p>I have been struggling with chronic pain for several years now, and despite trying various medications and treatments, I still have not found significant relief. I'm tired of relying solely on prescription painkillers, and I'm...</p>
       <hr>
       <div class='statsParent'>
@@ -41,9 +149,13 @@
       <br>
     </div>
 
-    <div class="post preview">
-      <p>CuriousMindset - 4/3/2023</p>
-      <h1>What are some common causes of chronic fatigue?</h1>
+    <div class="post-preview">
+      <div class="label">
+        <img src="" alt="CM">
+        <h3>CuriousMindset</h3>
+        <p> - 4/3/2023</p>
+      </div>
+      <h2>What are some common causes of chronic fatigue?</h2>
       <p>I've been experiencing persistent fatigue for several months now, and it's starting to affect my daily life. I'm having trouble concentrating, staying motivated, and even performing simple tasks. I'm curious to know what the possible...</p>
       <hr>
       <div class='statsParent'>
@@ -53,9 +165,13 @@
       <br>
     </div>
 
-    <div class="post preview">
-      <p>FightingFibro - 4/2/2023</p>
-      <h1>Does anyone have advice for managing fibromyalgia flare-ups?</h1>
+    <div class="post-preview">
+      <div class="label">
+        <img src="" alt="FF">
+        <h3>FightingFibro</h3>
+        <p> - 4/2/2023</p>
+      </div>
+      <h2>Does anyone have advice for managing fibromyalgia flare-ups?</h2>
       <p>I was diagnosed with fibromyalgia several years ago, and while I've learned to manage my symptoms to some extent, I still have frequent flare-ups that leave me feeling exhausted and unable to function. I'm hoping to connect with...</p>
       <hr>
       <div class='statsParent'>
@@ -65,9 +181,13 @@
       <br>
     </div>
 
-    <div class="post preview">
-      <p>MindfulMeditator - 4/1/2023</p>
-      <h1>How can mindfulness and meditation help with anxiety?</h1>
+    <div class="post-preview">
+      <div class="label">
+        <img src="" alt="MM">
+        <h3>MindfulMeditator</h3>
+        <p> - 4/1/2023</p>
+      </div>
+      <h2>How can mindfulness and meditation help with anxiety?</h2>
       <p>I've been struggling with anxiety for several years now, and while therapy and medication have helped to some extent, I'm interested in exploring mindfulness and meditation as a way to manage my symptoms...</p>
       <hr>
       <div class='statsParent'>
@@ -77,9 +197,5 @@
       <br>
     </div>
   </div>
-
-  <button (click)="router.navigate(['/registerlogin']);">
-    <span>Login / Register</span>
- </button>
 
 </div>
