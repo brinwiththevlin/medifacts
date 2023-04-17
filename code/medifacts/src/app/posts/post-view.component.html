@@ -1,0 +1,107 @@
+<style>
+
+div.bg {
+    position: static;
+    background-color:#fffff6;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#595959;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .container-page{
+    position: absolute;
+    width: 75%;
+    background-color:#fffff6;
+
+
+  }
+  .post-preview{
+    position: relative;
+    border: 1px solid #c7c7c7;
+    padding:35px;
+    text-decoration: none;
+  }
+  .label{
+    display: flex;
+  }
+  .label img{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: #816E7C;
+    color:#E8E6E6;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .label h3{
+    display: inline;
+    padding: 0 10px;
+  }
+  .label p{
+    display: inline;
+    padding: 4px;
+  }
+
+button{
+  background-color: #816E7C;
+  border: none;
+  border-radius: 15%;
+  color: #E8E6E6;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding:10px 15px;
+  margin: 5px;
+}
+button:hover{
+  text-decoration: underline;
+}
+button span{
+  background-color: #816E7C;
+
+}
+.return{
+  position:relative;
+  display: flex;
+  bottom: 60px;
+
+}
+</style>
+
+<div class="bg">
+
+  <div class="container-page">
+    <div class="post-preview">
+      <div class="label">
+        <img src="../../assets/images/no-profile-picture-icon-13-3792549739.jpg" alt="BP">
+        <h3>BluePenguin87</h3>
+        <p> - 17 hours ago</p>
+      </div>
+      <h2>Has anyone experienced joint pain while taking medication X?</h2>
+      <i>in General Questions</i>
+
+      <div class='body'>
+        <p>I have been taking medication X for the past two months to treat my chronic condition. While the medication has been effective in managing my symptoms, I have recently started experiencing joint pain that I didn't have before.
+          <br><br>I am wondering if anyone else has had a similar experience with medication X and joint pain. Is this a common side effect? If so, did it go away over time, or did you have to switch to a different medication?
+          <br><br>I would also love to hear from any doctors or healthcare professionals who have knowledge about this medication and its potential side effects.
+          <br><br>Thank you in advance for any advice or insights you can provide!</p>
+      </div>
+      <div class='interactions'>
+        <button class='like'>
+          <span>Like</span>
+        </button>
+        <button class='share'>
+          <span>Share</span>
+        </button>
+      </div>
+      <hr>
+      <p>0 comments</p>
+      <br>
+    </div>
+    <div class="return" >  <button (click)="router.navigate(['/posts']);">
+      <span>Go to Feed</span>
+    </button></div>
+
+</div>

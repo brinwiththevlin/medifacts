@@ -1,0 +1,186 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .main{
+        height: 100vh;
+        display:flex;
+        width:100%; 
+        align-items: center;
+        justify-content: center;
+        background-color: #fffff6;
+        padding-top: 75px;
+    }
+    
+    .container{
+        position: relative;
+        height: 100%;
+        width: 75%;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 0 20px;
+    }
+    .container .profile .user-info{
+        background: #816E7C;
+        padding: 15px;
+    }
+
+    .type{
+        background: #816E7C;
+
+    }
+    .profile-pic{
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        border: 3px solid white;
+    }
+    .name{
+        color: #E8E6E6;
+        font-size: x-large;
+        font-weight: 3S00;
+        padding: 5px 15px;
+        background: #816E7C;
+    }
+    .follow-info{
+        color: #E8E6E6;
+        font-size: small;
+        padding: 5px 40px;
+    }
+    .options{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #fffff6;
+        position: relative;
+        border-top: 1px groove #C7C7C7;
+        border-bottom: 1px groove #C7C7C7;
+        }
+    
+    nav div .navbar-brand{
+        float: left;
+        font-family:Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #595959;
+        font-size: 200%;
+        
+    }
+    
+    li{
+        float: left;
+        list-style-type: none;
+    }
+    
+    li a{
+      display: block;
+      text-align: center;
+      padding:15px;
+      background-color: #fffff6;
+      text-decoration: none;
+      list-style-type: none;
+      font-family:Arial, Helvetica, sans-serif;
+      color: #595959;
+      font-size: 100%;
+      
+    }
+    li a:hover{
+      text-decoration: underline;
+      border: 1px groove #C7C7C7;
+    }
+    .about{
+        position: relative;
+        display: block;
+        color: #595959;
+        padding: 15px;
+        background-color: #fffff6;
+    }
+    .about .about-me{
+        position: relative;
+        font-size: x-large;
+        font-weight: 500;
+        padding: 0 60px 0 0;
+        border-bottom: 1px groove #C7C7C7;
+    }
+    .about p{
+        position: relative;
+        padding: 20px 0;
+    }
+    .posts{
+        position: relative;
+        display: block;
+        color: #595959;
+        padding: 15px;
+        background-color: #fffff6;
+    }
+    
+    .posts .my-posts{
+        position: relative;
+        font-size: x-large;
+        font-weight: 500;
+        padding: 0 60px 0 0;
+        border-bottom: 1px groove #C7C7C7;
+    }
+    
+    .posts .my-feed{
+        position: relative;
+        padding: 20px 0;
+    }
+    </style>
+    
+    <div class="main">
+        <div class="container">
+            <div class="profile">
+                <div class="user-info">
+                    <img class="profile-pic" src=".\modules\temphtml\img\kunal.jpg" >
+                    <div class="name"> Firstname Lastname</div>
+                    <div class="type"> </div>
+                    <div class="follow-info">Followers 12 Following 20</div>
+                </div>
+                <div class="options">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                            routerLink="/">
+                                My Posts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                            routerLink="/">
+                                My Account
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                            routerLink="/">
+                                Settings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                            routerLink="/">
+                                Notifications
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="about">
+                    <Span class="about-me">About Me</Span>
+                    <p> This is a page alll about MEEEEE</p>
+                </div>
+                <!-- post feed -->
+                <div class="posts">
+                    <span class="my-posts">My Posts</span>
+                    <div class="post-feed">idk put post here i guess</div>
+                </div>
+            </div>
+        </div>
+    </div>

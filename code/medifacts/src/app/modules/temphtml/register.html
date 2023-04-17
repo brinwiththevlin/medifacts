@@ -1,0 +1,230 @@
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fffff6;
+    }
+    
+    .container{
+        position: relative;
+        max-width: 430px;
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 0 20px;
+    }
+    
+    .container .forms{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: 200%;
+        transition: height 0.2s ease;
+    }
+    
+    .container .form{
+        width: 50%;
+        padding: 30px;
+        background-color: #fff;
+        transition: margin-left 0.18s ease;
+    }
+    
+    .container .signup{
+        opacity: 1;
+        transition: opacity 0.2s ease;
+    }
+    
+    .container.active .forms{
+        height: 600px;
+    }
+    .container .form .title{
+        position: relative;
+        font-size: 27px;
+        font-weight: 600;
+    }
+    
+    
+    .form .form-group{
+        position: relative;
+        height: 50px;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .form .form-group .subtitle{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        color: black;
+        align-items: center;
+        transform: translateY(5%);
+    }
+    
+    .form-group input{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 0px 30px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        transition: all 0.2s ease;
+        transform: translateY(50%);
+        
+    }
+    
+    .form-group input:is(:focus, :valid){
+        border-bottom-color: #816E7C;
+    }
+    
+    .form-group i{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #999;
+        font-size: 23px;
+        transition: all 0.2s ease;
+    }
+    
+    .form-group input:is(:focus, :valid) ~ i{
+        color: #816E7C;
+    }
+    
+    .form-group i.icon{
+        left: 0;
+    }
+    .form-group i.showHidePw{
+        right: 0;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .form .checkbox-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        transform: translateY(60%);
+    }
+    
+    .checkbox-text .checkbox-content{
+        display: flex;
+        align-items: center;
+    }
+    
+    .checkbox-content input{
+        margin-right: 10px;
+        accent-color: #816E7C;
+    }
+    
+    .form .text{
+        color: #333;
+        font-size: 14px;
+    }
+    
+    .form a.text{
+        color: #816E7C;
+        text-decoration: none;
+    }
+    .form a:hover{
+        text-decoration: underline;
+    }
+    
+    .form .button{
+        margin-top: 35px;
+    }
+    
+    .form .button input{
+        border: none;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 6px;
+        background-color: #816E7C;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .button input:hover{
+        background-color: #816E7C;
+    }
+    
+    .form .login-signup{
+        margin-top: 30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+        
+    <div class="container">
+        <div class="forms">
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="form-group">
+                        <span class = "subtitle">Full Name</span>
+                        <input type="text" 
+                        class = "form-control"
+                        placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <span class = "subtitle">Username</span>
+                        <input type="text" 
+                        class = "form-control"
+                        minlength = "5"
+                        placeholder="Enter your Username" required>
+                    </div>
+                    <div class="form-group">
+                        <span class = "subtitle">Email</span>
+                        <input type="text" 
+                        class = "form-control"
+                        minlength = "5"
+                        placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <span class = "subtitle">Password</span>
+                        <input type="password" 
+                        class="password" 
+                        minlength="8"
+                        placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <span class = "subtitle">Password Confirmation</span>
+                        <input type="password" 
+                        class="password" 
+                        minlength="8"
+                        placeholder="Confirm a password" required>
+                    </div>
+
+                    <div class="form-group button">
+                        <input type="button" value="Signup">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!--<script src="script.js"></script>-->
+</body>
