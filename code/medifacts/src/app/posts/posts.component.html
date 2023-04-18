@@ -1,0 +1,147 @@
+<style>
+  *{
+          font-family: Arial, Helvetica, sans-serif;
+          background: #fffff6;
+      }
+    .container-m{
+          position: static;
+          height: 50vh;
+          width: 100%;
+          padding: 20px 0;
+          background: #816E7C;
+          overflow: hidden;
+          margin: 0;
+          justify-content: center;
+          display: flex;
+      }
+      .container-m .mission{
+          background: #fffff6;
+          position: relative;
+          height: 100%;
+          width: 75%;
+          
+      
+      }
+      .container-m .mission-image{
+          display:inline;
+          float: left;
+          height:100%;
+          position: relative;
+          width: 40%;
+          background-color: #816E7C;
+      }
+      /* .mission .mission-image{
+       
+      } */
+      .mission-statement{
+          position: relative;
+          height: 100%;
+          width: 60%;
+          float: right;
+      }
+      .mission .mission-statement .title{
+          position: absolute;
+          font-size: xx-large;
+          font-weight: light;
+          float: right;
+          height: 50%;
+          width: 100%;
+          text-align: right; 
+      }
+      .title .words{
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+      }
+      .mission-statement p{
+        position: absolute;
+        padding: 0 5px;
+        bottom: 0;
+      
+      }
+  
+    div.bg {
+      position: static;
+      background-color:#fffff6;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#595959;
+      justify-content: center;
+      display: flex;
+    }
+    
+    .container-page{
+      position: absolute;
+      width: 75%;
+  
+    }
+    .post-preview{
+      position: relative;
+      border: 1px solid #c7c7c7;
+      padding:35px;
+      text-decoration: none;
+    }
+    .label{
+      display: flex;
+    }
+    .label img{
+      height: 45px;
+      width: 45px;
+      border-radius: 100%;
+      background-color: #816E7C;
+      color:#E8E6E6;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    .label h3{
+      display: inline;
+      padding: 0 10px;
+      color: #816E7C;
+    }
+    .label p{
+      display: inline;
+      padding: 4px;
+    }
+  
+    .statsParent{
+      display: flex;
+    }
+    .statsParent .statsChild{
+      padding: 0 10px;
+      color: #816E7C
+    }
+  </style>
+  <div class="container-m">
+  
+    <div class="mission">
+        <img class="mission-image" src="../../assets/images/MicrosoftTeams-image.png" alt="misImg" />
+        <div class="mission-statement">
+            <div class="title">
+              <div class="words"> Ask Your Questions.<br>Get Real Answers.</div>
+            </div>
+            <p> Diagnoses can be scary, so Medifacts is dedicated to helping you get the support you deserve. Limit your posts so that only our licensed medical professionals can answer your questions. Join a community of individuals with similar diagnoses and get support. Stop doomscrolling and start understanding.</p>
+        </div>
+    </div>
+  </div>
+  <ng-container class = "post-preview" *ngFor = 'let post of posts$ | async'>
+  
+    <div class="post-preview">
+      <div class="label">
+        <img src="../../assets/images/no-profile-picture-icon-13-3792549739.jpg" alt="BP">
+        <h3>{{post.user}}</h3>
+        <p> - 17 hours ago</p>
+      </div>
+      <h2> <a [routerLink]="['/post-view']">{{post.title}}</a></h2>
+      <p>{{post.post_text}}</p>
+      <hr>
+      <div class='statsParent'>
+        <div class='statsChild'>0 likes</div>
+        <div class='statsChild'>0 comments</div>
+      </div>
+      <br>
+    </div>
+    
+    </ng-container>
+  
+  
+  
