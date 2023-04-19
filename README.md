@@ -84,7 +84,7 @@ Medifacts is an in-development platform aimed to be an intersection between doct
 
  - Final Self-Assessments (Spring Semester)
 	- [Laura Rodriguez](https://github.com/brinwiththevlin/medifacts/blob/main/Self-Assessments/Final_(Spring)/laura_finalassessment.docx)
-	- [Sabrina Bauman](https://github.com/brinwiththevlin/medifacts/blob/main/Self-Assessments/Initial_(Fall)/BaumanSelfassessment.docx)
+	- [Sabrina Bauman](https://github.com/brinwiththevlin/medifacts/blob/main/Self-Assessments/Final_(Spring)/FinalSelfAssessmentBauman.docx)
 	- [Grace Owens](https://github.com/brinwiththevlin/medifacts/blob/main/Self-Assessments/Final_(Spring)/owensgr_finalassessment.docx)
 	- [Bryan Cora](https://github.com/brinwiththevlin/medifacts/blob/main/Self-Assessments/Initial_(Fall)/individual_capstone_assessment_bryan_cora.docx)
 	- [Nico Aleman](https://github.com/brinwiththevlin/medifacts/blob/main/Self-Assessments/Initial_(Fall)/AlemanSelfAssessment.docx)
