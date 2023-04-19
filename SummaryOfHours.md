@@ -24,11 +24,18 @@ Throughout this project, I was involved in a range of tasks that contributed to 
 | Date       | Description                                                                  | Hours |
 | ---------- | ---------------------------------------------------------------------------- | ----- |
 | Spring Sem | Team meetings                                                                | 15    |
-
-**Total Hours: 50**
+| Jan         | Researching and playing around with Flask and Angular                       | 4   |
+| Late Jan    | Researched more angular, did tutorials, made a plan on how to use it.       | 5     |
+| Early Feb   | Implement sample angular projects to understand.        				    | 3 	|
+| Mid Feb 	  | Established application's front end structure.								| 5 	|
+| March 	  | Used Firebase to start injecting data into web application.			     	| 6 	|
+| Late March  | Debugging and Troubleshooting	                                            | 7 	|
+| Early April | Reworked demo for Expo.                             						| 5 	|
+| Mid April   | Contributed to final report                     							| 1 	|
+**Total Hours: 51**
 
 ### Justification:
-Insert a paragraph of justification of the activities for the team member associated with these hours
+I contributed the most in the actual implementation of the web application. Although I did contribute to the initial assignments such as the test plan and user docs, the majority of my contributions are related to the code itself. After the initial backend was set up, I spent many hours working and reworking the front-end with many challenges. I also set up the user authentication system, which was a hurdle since I did not have much experience with that. 
 
 ## Sabrina Bauman
 | Date       | Description                                                                  | Hours |
