@@ -1,15 +1,24 @@
 # Summary Of Hours
 
 ## Nico Aleman
-| Date       | Description                                                 | Hours |
-| ---------- | ----------------------------------------------------------- | ----- |
-| 12/20/2022 | Example Task                                                | 1     |
-| Spring Sem | Team meetings                                               | 15    |
+
+| Date       | Description                                                                  | Hours |
+| ---------- | ---------------------------------------------------------------------------- | ----- |
+| Spring Sem  | Team meetings                                                               | 15    |
+| Jan         | Familiarizing with Angular and getting environment set up                   | 3     |
+| Late Jan    | Laid out a Test Plan, with various Unit Tests for the finished product      | 2     |
+| Early Feb   | Researched existing platforms and what may set us apart 				    | 3 	|
+| Mid Feb 	  | Built out Presentation for the Spring Semester 								| 4 	|
+| March 	  | Began helping to build out Front End structure for the site 				| 5 	|
+| Late March  | Work and Troubleshooting on connecting Front End to API 					| 8 	|
+| Early April | Helped build out HTML for reworked Demo for the Expo 						| 5 	|
+| Mid April   | Reorganized Repo for Final Report requirements 								| 5 	|
+
 
 **Total Hours: 50**
 
 ### Justification:
-Insert a paragraph of justification of the activities for the team member associated with these hours
+Throughout this project, I was involved in a range of tasks that contributed to the project's forward momentum. I attended team meetings, which involved productive collaboration and helped ensure we were on the same page each week. I took the time to familiarize myself with Angular and set up my development environment once the semester got going. I played a role in building out a test plan that included unit tests for our final product. Furthermore, I conducted research on existing platforms similar to our concept, identifying what would set us apart from our competitors in order to effectively market our idea. Additionally, I helped build out the front-end structure of our website, spending a good deal of time troubleshooting issues related to linking it to the API. I was also largely responsible for creating our Spring presentation, and helped build out the HTML for a reworked demo that was presented at the CEAS expo. Finally, I reorganized our project repository at the end of the term to meet the final report requirements. Overall, I worked on a diverse range of tasks that kept me busy throughout the semester and contributed to the end result of our project.
 
 ## Laura Rodriguez
 | Date       | Description                                                                  | Hours |
