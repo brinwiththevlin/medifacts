@@ -34,6 +34,11 @@ Insert a paragraph of justification of the activities for the team member associ
 | Date       | Description                                                                  | Hours |
 | ---------- | ---------------------------------------------------------------------------- | ----- |
 | Spring Sem | Team meetings                                                                | 15    |
+| Jan | Learning Angular and personal environment set-up | 3 |
+| Late Jan | Contributing to overall Test Plan and unit test creation | 2 |
+| Ealy Feb | Creating Mock-ups and planning site layout | 6 |
+| Mid Feb | Began Experimenting with HTML and CSS styling on the site itself | 6 |
+| Feb | *** NOT DONE ***
 
 **Total Hours: 50**
 
